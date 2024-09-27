@@ -1,0 +1,31 @@
+<p>update-person works!</p>
+<form #updatePersonForm="ngForm" (ngSubmit)="onUpdatePerson()">
+    <table border="0" style="margin: auto;">
+      <tbody>
+        <tr>
+          <td>ID:</td>
+          <td><input type="text" name="id" [(ngModel)]="person.id" style="pointer-events: none; background-color: lightgray;"/></td>
+        </tr>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="firstname" [(ngModel)]="person.firstname"/></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lastname" [(ngModel)]="person.lastname"/></td>
+        </tr>
+        <tr>
+          <td>Street:</td>
+          <td><input type="text" name="street" [(ngModel)]="person.street"/></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input type="text" name="city" [(ngModel)]="person.city"/></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="修改"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>

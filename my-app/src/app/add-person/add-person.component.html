@@ -1,0 +1,27 @@
+<p>add-person works!</p>
+<form #personForm="ngForm" (ngSubmit)="onAddPerson(personForm.value)">
+    <table border="0" style="margin: auto;">
+        <tbody>
+            <tr>
+                <td>First Name : </td>
+                <td><input type="text" name="firstname" ngModel></td>
+            </tr>
+            <tr>
+                <td>Last Name : </td>
+                <td><input type="text" name="lastname" ngModel></td>
+            </tr>
+            <tr>
+                <td>Street :</td>
+                <td><input type="text" name="street" ngModel></td>
+            </tr>
+            <tr>
+                <td>City : </td>
+                <td><input type="text" name="city" ngModel></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="新增"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
